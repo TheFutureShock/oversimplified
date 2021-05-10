@@ -1,6 +1,7 @@
 // this is a discord bot that utilizes an unnecessary amount of functions to make the code shorter than it needs to be
 const d = require('discord.js');
 const c = new d.Client();
+require("dotenv").config();
 
 on('ready', () => {
 	log('ready');
@@ -52,7 +53,7 @@ on('message', m => {
 	}
 });
 
-c.login(process.env['TOKEN']);
+c.login(process.env.TOKEN);
 
 // the various functions -------)
 
